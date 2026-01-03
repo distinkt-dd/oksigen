@@ -1,0 +1,64 @@
+.hero {
+	max-width: 100%;
+	width: 100%;
+	padding-block: fluid(30, 10);
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		row-gap: fluid(26, 13);
+		max-width: fluid(843, 300);
+
+		@include mobile-s {
+			max-width: 100%;
+			width: 100%;
+		}
+	}
+
+	&__title {
+		text-transform: uppercase;
+		@include mobile-s {
+			text-align: center;
+		}
+	}
+
+	&__subtitle {
+		@include fluid-text(24, 14);
+		max-width: 673px;
+		@include mobile-s {
+			text-align: center;
+		}
+	}
+
+	&__logo {
+		max-width: fluid(474, 300);
+		border: var(--border-width-m) var(--color-accent) solid;
+		border-radius: var(--b-rad-l);
+		& img {
+			max-width: 100%;
+			width: 100%;
+			border-radius: inherit;
+		}
+		@include mobile-s {
+			margin: 0 auto;
+		}
+	}
+
+	&__actions {
+		display: flex;
+		align-items: center;
+		gap: 60px;
+	}
+
+	&__socials {
+		@include mobile {
+			display: none;
+		}
+	}
+
+	&__button {
+		@include mobile-s {
+			margin: 0 auto;
+		}
+	}
+}

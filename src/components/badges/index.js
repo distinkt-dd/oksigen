@@ -1,0 +1,1 @@
+import './Badges.scss'

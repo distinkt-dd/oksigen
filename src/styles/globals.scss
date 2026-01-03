@@ -1,0 +1,106 @@
+@use 'helpers/index' as *;
+
+html {
+	&.is-lock {
+		overflow: hidden;
+	}
+}
+
+.d-n {
+	display: none !important;
+}
+
+.container {
+	max-width: 1470px;
+	width: 100%;
+	margin: 0 auto;
+	padding-inline: 15px;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	@include fluid-text(20, 14);
+	font-family: var(--ff-main);
+	font-weight: 600;
+	color: var(--color-main);
+	background-color: var(--color-metal);
+}
+
+main {
+	flex-grow: 1;
+	min-height: 100vh;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	color: var(--color-main);
+	font-family: var(--ff-main);
+	line-height: 1.3;
+	font-weight: 700;
+}
+
+h2,
+.h2 {
+	@include fluid-text(48, 20);
+}
+
+h3,
+.h3 {
+	@include fluid-text(32, 20);
+	font-weight: 700;
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+	transition-duration: var(--transition-duration);
+}
+
+a {
+	color: inherit;
+
+	&[class] {
+		text-decoration: none;
+	}
+}
+
+:focus-visible {
+	@include focus-visible;
+}
+
+p {
+	font-weight: 600;
+	line-height: auto;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--color-main);
+}

@@ -1,0 +1,20 @@
+.button {
+	@include fluid-text(20, 16);
+	font-weight: 700;
+	text-align: center;
+	max-width: fluid(289, 267);
+	width: 100%;
+
+	&__default {
+		background-color: var(--color-main);
+		color: var(--color-white);
+		border-radius: var(--b-rad-l);
+		padding-block: 5px;
+		border: var(--color-main) var(--border-width-m) solid;
+
+		@include hover {
+			background-color: var(--color-metal);
+			color: var(--color-main);
+		}
+	}
+}
