@@ -1,0 +1,27 @@
+.section {
+	padding-block: fluid(100, 25);
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		row-gap: fluid(56, 20);
+	}
+
+	&__titlebox {
+		max-width: max-content;
+	}
+
+	&__title {
+		position: relative;
+
+		&::after {
+			position: absolute;
+			bottom: -10px;
+			left: 0;
+			content: '';
+			height: 3px;
+			width: 50%;
+			background-color: var(--color-main);
+		}
+	}
+}

@@ -1,5 +1,11 @@
 import '@components/socials'
 
 import '@components/header'
+import '@components/section'
 import '@components/hero'
 import '@components/badges'
+import '@components/history'
+import '@components/dialog'
+import '@components/service'
+import '@components/links'
+import '@components/footer'

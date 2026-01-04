@@ -1,0 +1,14 @@
+.history {
+	&__list {
+		flex-wrap: wrap;
+		gap: fluid(65, 25);
+
+		@include mobile {
+			justify-content: center;
+		}
+		&-item {
+			max-width: 400px;
+			width: 100%;
+		}
+	}
+}

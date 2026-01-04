@@ -1,0 +1,74 @@
+.footer {
+	background-color: var(--color-main);
+	padding: fluid(40, 20) 0px;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@include mobile {
+			align-items: flex-start;
+			flex-direction: column;
+			row-gap: 25px;
+		}
+	}
+
+	&__image {
+		max-width: max-content;
+		overflow: hidden;
+		border-radius: var(--b-rad-l);
+		border: var(--border-width-m) var(--color-accent) solid;
+		& img {
+			max-width: fluid(189, 131);
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		row-gap: fluid(25, 15);
+
+		&-desc {
+			@include fluid-text(24, 18);
+		}
+
+		&-link {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			& img,
+			& svg {
+				max-width: fluid(40, 35);
+			}
+
+			@include hover {
+				scale: 1.1;
+			}
+		}
+
+		&-item {
+			color: var(--color-metal);
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		row-gap: fluid(20, 15);
+		&-title {
+			color: var(--color-metal);
+			@include fluid-text(24, 20);
+		}
+
+		&-lists {
+			display: flex;
+			align-items: flex-start;
+			gap: fluid(60, 25);
+
+			@include mobile {
+				flex-direction: column;
+			}
+		}
+	}
+}

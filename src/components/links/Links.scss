@@ -1,0 +1,38 @@
+.links {
+	&__list {
+		flex-wrap: wrap;
+		align-items: center;
+		gap: fluid(65, 20);
+
+		@include mobile {
+			justify-content: center;
+		}
+
+		&-item {
+			min-height: fluid(326, 182);
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			gap: fluid(30, 15);
+			align-items: center;
+			max-width: fluid(303, 255);
+			width: 100%;
+			padding: 10px 30px 20px;
+		}
+	}
+
+	&__subtitle {
+		font-size: 18px;
+	}
+
+	&__contentbox {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: fluid(25, 15);
+
+		& img {
+			max-width: fluid(125, 70);
+		}
+	}
+}
