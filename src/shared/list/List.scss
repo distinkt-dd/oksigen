@@ -1,0 +1,10 @@
+.list {
+	display: flex;
+
+	&-item {
+		border: var(--border-width-m) var(--color-accent) solid;
+		border-radius: var(--b-rad-l);
+		overflow: hidden;
+
+	}
+}

@@ -17,4 +17,16 @@
 			color: var(--color-main);
 		}
 	}
+
+	&__transparent {
+		background-color: var(--color-metal);
+		color: var(--color-main);
+		border-radius: var(--b-rad-l);
+		padding-block: 5px;
+		border: var(--color-main) var(--border-width-m) solid;
+		@include hover {
+			background-color: var(--color-main);
+			color: var(--color-metal);
+		}
+	}
 }

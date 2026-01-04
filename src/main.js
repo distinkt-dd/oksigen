@@ -1,3 +1,4 @@
 import '@styles'
-import '@components'
 import '@shared'
+import '@components'
+import '@scripts'
