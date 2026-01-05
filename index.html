@@ -5,8 +5,8 @@
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>oksigen-st</title>
-		<script type="module" src="./assets/index-BnFNWHHb.js"></script>
-		<link rel="stylesheet" href="./assets/index-DGb6MYLJ.css" />
+		<script type="module" src="./assets/index-8WsxcAJ4.js"></script>
+		<link rel="stylesheet" href="./assets/index-CRkKjroA.css">
 	</head>
 	<body>
 		<header class="header" data-js-header>
@@ -18,26 +18,26 @@
 			<div class="header__container container">
 				<nav class="nav header__nav" data-js-header-nav>
 					<ul class="header__menu">
-						<li class="header__menu-item">
-							<a href="" class="header__menu-link">О студии</a>
+						<li class="header__menu-item" data-js-header-nav-action>
+							<a href="#hero" class="header__menu-link">О студии</a>
 						</li>
-						<li class="header__menu-item">
-							<a href="" class="header__menu-link">История</a>
+						<li class="header__menu-item" data-js-header-nav-action>
+							<a href="#history" class="header__menu-link">История</a>
 						</li>
-						<li class="header__menu-item">
-							<a href="" class="header__menu-link">Услуги</a>
+						<li class="header__menu-item" data-js-header-nav-action>
+							<a href="#service" class="header__menu-link">Услуги</a>
 						</li>
-						<li class="header__menu-item">
-							<a href="" class="header__menu-link">Продукция</a>
+						<li class="header__menu-item" data-js-header-nav-action>
+							<a href="#products" class="header__menu-link">Продукция</a>
 						</li>
-						<li class="header__menu-item">
-							<a href="" class="header__menu-link">Руководитель</a>
+						<li class="header__menu-item" data-js-header-nav-action>
+							<a href="#director" class="header__menu-link">Руководитель</a>
 						</li>
-						<li class="header__menu-item">
-							<a href="" class="header__menu-link">Ссылки</a>
+						<li class="header__menu-item" data-js-header-nav-action>
+							<a href="#links" class="header__menu-link">Ссылки</a>
 						</li>
-						<li class="header__menu-item">
-							<a href="" class="header__menu-link">Контакты</a>
+						<li class="header__menu-item" data-js-header-nav-action>
+							<a href="#footer" class="header__menu-link">Контакты</a>
 						</li>
 						<li class="header__menu-item">
 							<ul class="header__socials socials">
@@ -58,7 +58,7 @@
 			</div>
 		</header>
 		<main class="main">
-			<section class="hero">
+			<section class="hero" id="hero">
 				<div class="hero__container container">
 					<div class="hero__content">
 						<div class="hero__logo">
@@ -95,9 +95,14 @@
 							</li>
 						</ul>
 						<div class="hero__actions">
-							<button class="button hero__button button__default" type="button">
-								Связаться с нами
-							</button>
+							<a href="#footer" class="hero__link link-db">
+								<button
+									class="button hero__button button__default"
+									type="button"
+								>
+									Связаться с нами
+								</button>
+							</a>
 							<ul class="hero__socials socials">
 								<li class="socials__item">
 									<a href="#" class="socials__link">
@@ -114,7 +119,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section history">
+			<section class="section history" id="history">
 				<div class="container history__container section__container">
 					<div class="section__titlebox">
 						<h2 class="h2 section__title">История</h2>
@@ -143,30 +148,24 @@
 							Е.Г:
 						</p>
 						<div class="history__buttons">
-							<button
-								class="button history__button button__default"
-								type="button"
+							<a
+								href="https://ukonf.com/doc/na.2022.10.04.pdf"
+								class="history__button-link link-db"
+								target="_blank"
 							>
-								<a
-									href="https://ukonf.com/doc/na.2022.10.04.pdf"
-									class="history__button-link"
-									target="_blank"
-								>
+								<button class="button button__default" type="button">
 									Статья в pdf формате
-								</a>
-							</button>
-							<button
-								class="button history__button button__default"
-								type="button"
+								</button>
+							</a>
+							<a
+								href="https://www.elibrary.ru/item.asp?id=49843550"
+								class="history__button-link link-db"
+								target="_blank"
 							>
-								<a
-									href="https://www.elibrary.ru/item.asp?id=49843550"
-									target="_blank"
-									class="history__button-link"
-								>
+								<button class="button button__default" type="button">
 									Ссылка на elibrary
-								</a>
-							</button>
+								</button>
+							</a>
 						</div>
 					</div>
 					<div class="history__content">
@@ -190,7 +189,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section service">
+			<section class="section service" id="service">
 				<div class="container service__container section__container">
 					<div class="section__titlebox">
 						<h2 class="h2 section__title">Услуги студии</h2>
@@ -290,23 +289,177 @@
 							<h3 class="h3 service__title">
 								Уточнить все детали можно, связавшись с нами
 							</h3>
-							<button class="button button__default" type="button">
-								Связаться с нами
-							</button>
+							<a href="#footer" class="service__link link-db">
+								<button class="button button__default" type="button">
+									Связаться с нами
+								</button>
+							</a>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="section director">
+			<section class="section products" id="products">
+				<div class="container section__container products__container">
+					<div class="section__titlebox">
+						<h2 class="h2 section__title">Продукция студии</h2>
+					</div>
+					<div class="products__content">
+						<ul class="list products__list">
+							<li class="list-item products__item">
+								<img
+									src="./products/1.jpg"
+									alt="Соц. образование в России"
+									width="400"
+								/>
+								<div class="products__textbox">
+									<p class="products__text">
+										Харитонова Е.Г. Социальное образование в России: теория и
+										практика: учебно-методическое пособие. – Курск: Изд-во ЗАО
+										«Университетская книга». 2025. – 241 с.
+									</p>
+								</div>
+							</li>
+							<li class="list-item products__item">
+								<img
+									src="./products/2.jpg"
+									alt="О сохранении документальной памяти"
+									width="400"
+								/>
+								<div class="products__textbox">
+									<p class="products__text">
+										Харитонова Е. Г. О сохранении документальной памяти:
+										организация ведомственного хранения документов в России:
+										монография. — Казань: Бук, 2020. — 158 с.
+									</p>
+								</div>
+							</li>
+							<li class="list-item products__item">
+								<img src="./products/3.jpg" alt="Мемориал" width="400" />
+								<div class="products__textbox">
+									<p class="products__text">
+										Харитонова Е.Г. «МЕМОРИАЛ» В РОССИИ: взаимодействие
+										государства и некоммерческих организаций в вопросах
+										сохранения памяти о жертвах политических репрессий (II пол.
+										1980-х – начало 2000-х гг.). – Барнаул: Новый Формат, 2018.
+										– 281 с.
+									</p>
+								</div>
+							</li>
+							<li class="list-item products__item">
+								<img
+									src="./products/4.jpg"
+									alt="Историческая память и гражданское общество"
+									width="400"
+								/>
+								<div class="products__textbox">
+									<p class="products__text">
+										Харитонова Е. Г. Историческая память и гражданское общество
+										в России: материалы спецкурса. – М.: Издательство «Перо»,
+										2016. – 334 с.
+									</p>
+								</div>
+							</li>
+							<li class="list-item products__item">
+								<img
+									src="./products/5.jpg"
+									alt="Организация хранения"
+									width="400"
+								/>
+								<div class="products__textbox">
+									<p class="products__text">
+										Путилова Е. Г. Организация хранения, консервация и
+										реставрация документов архивов: учебно-методическое пособие.
+										– Барнаул: Издательская группа «Си-пресс», 2014. – 167 с.
+									</p>
+								</div>
+							</li>
+							<li class="list-item products__item">
+								<img
+									src="./products/6.jpg"
+									alt="История гос. ребилитационной политики"
+									width="400"
+								/>
+								<div class="products__textbox">
+									<p class="products__text">
+										Путилова Е.Г. История государственной реабилитационной
+										политики и общественного движения за увековечение памяти
+										жертв политических репрессий в России (1953 – начало 2000-х
+										гг.). – Уфа: Издательство «Инфинити», 2012. – 144 с.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="section director" id="director">
 				<div class="container director__container section__container">
 					<div class="section__titlebox">
 						<h2 class="h2 section__title">Руководитель студии</h2>
 					</div>
 
-					<div class="director__content"></div>
+					<div class="director__content">
+						<div class="director__inner">
+							<img src="./director/director-1.png" alt="Директор студии" />
+							<div class="director__textbox">
+								<p class="director__text">
+									<span>✓</span> 5 лет — управленческий опыт в области научных
+									исследований и разработок
+								</p>
+								<p class="director__text">
+									<span>✓</span> 18 лет — опыт работы в сфере высшего
+									образования
+								</p>
+								<p class="director__text">
+									<span>✓</span> с 2005 г.  — опыт проведения исследований в
+									области истории общественных организаций
+								</p>
+								<p class="director__text">
+									<span>✓</span> с 2017 г. — экспертная деятельность в области
+									развития НКО-сектора
+								</p>
+								<p class="director__text">
+									<span>✓</span> 30 научных, социальных и образовательных
+									конкурсов и конкурсов грантов (дипломант, лауреат, победитель)
+								</p>
+							</div>
+						</div>
+						<div class="director__inner">
+							<img src="./director/director-2.png" alt="Директор студии" />
+							<div class="director__textbox">
+								<p class="director__text">
+									<span>✓</span> Организатор и модератор 20 городских,
+									региональных и всероссийских мероприятий
+								</p>
+								<p class="director__text">
+									<span>✓</span> Научный редактор с опытом работы в журнале
+									«Humanities andsocialscience» (ИД «SciencePublishing Group»,
+									Нью-Йорк, США)
+								</p>
+								<p class="director__text">
+									<span>✓</span> Стажировалась в университете Йорка,
+									Великобритания (программа «Подготовка научных публикаций в
+									международные журналы»)
+								</p>
+								<p class="director__text">
+									<span>✓</span> 19 документов об образовании: дипломы о
+									профпереподготовке, курсах повышения квалификации и
+									стажировках в ВНИИДАД ФАА (Москва), ФГБОУ ВО «Московский
+									государственный педагогический университет», НИУ ВШЭ (Москва),
+									АНО «Московский институт психологии» (Москва), ООО
+									«Директ-Медиа» (Москва), ООО ИОЦ «Северная столица»
+									(Санкт-Петербург), и др.
+								</p>
+							</div>
+						</div>
+						<div class="director__inner director__sertificate">
+							<img src="./director/sertificate-1.png" alt="Сертификат 1" />
+							<img src="./director/sertificate-2.png" alt="Сертификат 1" />
+						</div>
+					</div>
 				</div>
 			</section>
-			<section class="section links">
+			<section class="section links" id="links">
 				<div class="container links__container section__container">
 					<div class="section__titlebox">
 						<h2 class="h2 section__title">Ссылки</h2>
@@ -319,38 +472,43 @@
 									<img src="./links/cyclowiki.png" alt="Научная статья" />
 									<p class="links__subtitle">Научная статья</p>
 								</div>
-								<button class="button button__transparent" type="button">
-									<a
-										class="links__link"
-										href="https://cyclowiki.org/wiki/Елена_Геннадьевна_Харитонова"
-										target="_blank"
+								<a
+									class="links__link link-db"
+									href="https://cyclowiki.org/wiki/Елена_Геннадьевна_Харитонова"
+									target="_blank"
+								>
+									<button
+										class="button links__btn button__transparent"
+										type="button"
 									>
 										Посмотреть
-									</a>
-								</button>
+									</button>
+								</a>
 							</li>
 							<li class="list-item links__list-item">
 								<div class="links__contentbox">
 									<img src="./links/elibrary.png" alt="Научная статья" />
 									<p class="links__subtitle">Профиль на elibrary</p>
 								</div>
-								<button class="button button__transparent" type="button">
-									<a
-										class="links__link"
-										href="https://elibrary.ru/author_items.asp?authorid=509772&show_refs=1&show_option=1 
-										"
-										target="_blank"
+								<a
+									class="links__link link-db"
+									href="https://elibrary.ru/author_items.asp?authorid=509772&show_refs=1&show_option=1"
+									target="_blank"
+								>
+									<button
+										class="button links__btn button__transparent"
+										type="button"
 									>
 										Посмотреть
-									</a>
-								</button>
+									</button>
+								</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
+		<footer class="footer" id="footer">
 			<div class="footer__container container">
 				<div class="footer__image">
 					<img src="./logo.png" width="189" alt="Логотип" />
