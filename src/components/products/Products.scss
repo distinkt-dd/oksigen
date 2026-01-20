@@ -1,0 +1,23 @@
+.products {
+	position: relative;
+	&__list {
+		flex-wrap: wrap;
+		gap: fluid(40, 20);
+		align-items: flex-start;
+
+		@include tablet {
+			justify-content: center;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		gap: fluid(20, 15);
+		max-width: fluid(400, 300);
+	}
+
+	&__textbox {
+		padding: 0px 10px 20px;
+	}
+}

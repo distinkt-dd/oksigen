@@ -1,0 +1,223 @@
+.decorate {
+	position: absolute;
+	z-index: -1;
+	max-width: fluid(1000, 40);
+
+	@include mobile {
+		max-width: 50px;
+	}
+
+	&__anim {
+		@include mobile {
+			animation: rotateDecorate 10s linear infinite;
+		}
+	}
+
+	&__hero {
+		&#decorate-hero-1 {
+			top: -20%;
+			right: -15%;
+			rotate: -15deg;
+			@include mobile {
+				top: 20%;
+				right: 15%;
+			}
+		}
+
+		&#decorate-hero-2 {
+			top: -20%;
+			right: -15%;
+			rotate: -15deg;
+			@include mobile {
+				top: 70%;
+				right: 5%;
+			}
+
+			@include mobile-s {
+				display: none;
+			}
+		}
+	}
+
+	&__history {
+		max-width: fluid(300, 50);
+
+		&#decorate-history-1 {
+			right: 5%;
+
+			@include mobile {
+				top: 13%;
+				max-width: 50px;
+			}
+
+			@include mobile-s {
+				display: none;
+			}
+		}
+	}
+
+	&__service {
+		&#decorate-service-1 {
+			max-width: fluid(500, 50);
+			right: 0;
+			top: 0;
+			rotate: 70deg;
+
+			@include mobile {
+				max-width: 50px;
+				right: 15px;
+				top: 25%;
+			}
+		}
+
+		&#decorate-service-2 {
+			display: none;
+
+			@include mobile {
+				display: block;
+				max-width: 50px;
+				left: 15px;
+				top: 40%;
+			}
+		}
+
+		&#decorate-service-3 {
+			display: none;
+
+			@include mobile {
+				display: block;
+				max-width: 50px;
+				right: 15px;
+				top: 55%;
+			}
+		}
+	}
+
+	&__products {
+		&#decorate-products-1 {
+			max-width: 400px;
+			right: 15px;
+
+			@include mobile {
+				max-width: 50px;
+			}
+		}
+
+		&#decorate-products-2 {
+			display: none;
+
+			@include mobile {
+				display: block;
+				max-width: 50px;
+				left: 15px;
+				top: 35%;
+			}
+		}
+
+		&#decorate-products-3 {
+			display: none;
+
+			@include mobile {
+				display: block;
+				max-width: 50px;
+				right: 15px;
+				top: 55%;
+			}
+		}
+
+		&#decorate-products-4 {
+			display: none;
+
+			@include mobile {
+				display: block;
+				max-width: 50px;
+				left: 15px;
+				top: 81%;
+			}
+
+			@include mobile-s {
+				max-width: 30px;
+			}
+		}
+	}
+
+	&__director {
+		&#decorate-director-1 {
+			display: none;
+
+			@include tablet {
+				display: block;
+				max-width: 150px;
+				top: 20%;
+				right: 20px;
+			}
+
+			@include mobile {
+				display: block;
+				max-width: 60px;
+				bottom: 35%;
+				right: 15px;
+			}
+		}
+
+		&#decorate-director-2 {
+			display: none;
+
+			@include tablet {
+				display: block;
+				max-width: 150px;
+				bottom: 40%;
+				right: 20px;
+				rotate: 20deg;
+			}
+
+			@include mobile {
+				max-width: 60px;
+				bottom: 16%;
+				right: 150px;
+			}
+
+			@include mobile-s {
+				right: 15px;
+			}
+		}
+
+		&#decorate-director-3 {
+			display: none;
+
+			@include tablet {
+				display: block;
+				max-width: 150px;
+				bottom: 0;
+				right: 200px;
+				rotate: 20deg;
+			}
+
+			@include mobile {
+				display: block;
+				max-width: 60px;
+				bottom: 0;
+				right: 15px;
+			}
+		}
+	}
+
+	&__links {
+		&#decorate-links-1 {
+			right: -20%;
+
+			@include mobile {
+				display: none;
+			}
+		}
+	}
+
+	@keyframes rotateDecorate {
+		from {
+			rotate: 0deg;
+		}
+		to {
+			rotate: 360deg;
+		}
+	}
+}

@@ -1,0 +1,87 @@
+User-agent: *
+Allow: /
+
+# Разрешаем сканирование важных ресурсов
+Allow: /assets/
+Allow: /director/
+Allow: /history/
+Allow: /links/
+Allow: /products/
+Allow: /service/
+Allow: /socials/
+Allow: /favicon.ico
+Allow: /logo.png
+Allow: /decorate.svg
+
+# Запрещаем служебные/технические пути
+Disallow: /git/
+Disallow: /*.git*
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /dist/
+Disallow: /*.config.js
+Disallow: /*.env
+
+# Запрещаем временные файлы и кеши
+Disallow: /temp/
+Disallow: /cache/
+Disallow: /tmp/
+
+# Запрещаем поисковые и динамические запросы (если будут добавлены)
+Disallow: /search/
+Disallow: /*?*
+Disallow: /*&
+
+# Убираем технические параметры из URL
+Clean-param: ref /
+Clean-param: utm_source&utm_medium&utm_campaign /
+Clean-param: fbclid&gclid&yclid /
+
+# Указываем sitemap
+Sitemap: https://oksigen-st.ru/sitemap.xml
+
+# Правила для конкретных поисковых систем
+User-agent: Googlebot
+Allow: /assets/
+Allow: /socials/
+Crawl-delay: 1
+
+User-agent: Yandex
+Allow: /assets/
+Allow: /socials/
+Crawl-delay: 2
+Disallow: /*.php$
+Disallow: /*.asp$
+
+# Мобильные боты
+User-agent: Googlebot-Mobile
+Allow: /
+Crawl-delay: 2
+
+# Боты изображений
+User-agent: Googlebot-Image
+Allow: /
+Allow: /assets/
+Allow: /director/
+Allow: /history/
+Allow: /links/
+Allow: /products/
+Allow: /service/
+Disallow: /socials/  # Иконки соцсетей можно не индексировать
+
+# Хорошие боты (по желанию)
+User-agent: AhrefsBot
+Crawl-delay: 3
+
+User-agent: SemrushBot
+Crawl-delay: 3
+
+# Плохие/парсерные боты (блокировка)
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: rogerbot
+Disallow: /

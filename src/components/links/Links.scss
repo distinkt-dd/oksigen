@@ -1,4 +1,10 @@
 .links {
+	position: relative;
+	overflow: hidden;
+	&__btn {
+		width: fluid(240, 218);
+	}
+
 	&__list {
 		flex-wrap: wrap;
 		align-items: center;
