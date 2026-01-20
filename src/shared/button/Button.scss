@@ -2,8 +2,7 @@
 	@include fluid-text(20, 16);
 	font-weight: 700;
 	text-align: center;
-	max-width: fluid(289, 267);
-	width: 100%;
+	width: fluid(289, 267);
 
 	&__default {
 		background-color: var(--color-main);

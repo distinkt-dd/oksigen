@@ -85,6 +85,12 @@ a {
 	}
 }
 
+a.link-db {
+	display: block;
+	max-width: max-content;
+	width: 100%;
+}
+
 :focus-visible {
 	@include focus-visible;
 }

@@ -1,0 +1,57 @@
+.director {
+	position: relative;
+	&__content {
+		display: flex;
+		flex-direction: column;
+		row-gap: fluid(50, 20);
+	}
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		gap: fluid(40, 15);
+
+		@include tablet {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		& img {
+			border-radius: 40px;
+		}
+	}
+
+	&__textbox {
+		display: flex;
+		flex-direction: column;
+		gap: fluid(20, 15);
+
+		padding: 10px;
+		border: solid var(--color-accent) var(--border-width-m);
+		border-radius: var(--b-rad-m);
+		max-width: fluid(632, 300);
+
+		@include tablet {
+			max-width: fluid(800, 300);
+		}
+	}
+
+	&__text {
+		& span {
+			color: var(--color-success);
+		}
+	}
+
+	&__sertificate {
+		gap: fluid(70, 15);
+		justify-content: center;
+		@include tablet {
+		}
+
+		& img {
+			border-radius: 0px;
+			max-width: fluid(512, 300);
+			width: 100%;
+		}
+	}
+}

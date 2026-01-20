@@ -1,7 +1,9 @@
 .hero {
+	position: relative;
 	max-width: 100%;
 	width: 100%;
 	padding-block: fluid(30, 10);
+	overflow: hidden;
 
 	&__content {
 		display: flex;

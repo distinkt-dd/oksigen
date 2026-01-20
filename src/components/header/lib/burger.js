@@ -3,6 +3,7 @@ class BurgerButton {
 		root: '[data-js-header]',
 		nav: '[data-js-header-nav]',
 		burger: '[data-js-header-burger]',
+		navAction: '[data-js-header-nav-action]',
 	}
 
 	stateClasses = {
@@ -16,6 +17,7 @@ class BurgerButton {
 		this.rootElement = document.querySelector(this.selectors.root)
 		this.navElement = this.rootElement.querySelector(this.selectors.nav)
 		this.burgerElement = this.rootElement.querySelector(this.selectors.burger)
+		this.navActions = this.navElement.querySelectorAll(this.selectors.navAction)
 		this.bindEvents()
 	}
 
@@ -34,8 +36,21 @@ class BurgerButton {
 		}
 	}
 
+	onActionClick = () => {
+		this.burgerElement.classList.toggle(this.stateClasses.active)
+		this.navElement.classList.add(this.stateClasses.notActive)
+		setTimeout(() => {
+			this.navElement.classList.remove(this.stateClasses.notActive)
+			this.navElement.classList.remove(this.stateClasses.active)
+			this.documentElement.classList.remove(this.stateClasses.isLock)
+		}, 300)
+	}
+
 	bindEvents() {
 		this.burgerElement.addEventListener('click', this.onBurgerClick)
+		this.navActions.forEach(action => {
+			action.addEventListener('click', this.onActionClick)
+		})
 	}
 }
 
