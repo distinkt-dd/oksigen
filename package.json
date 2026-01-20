@@ -1,22 +1,26 @@
 {
-  "name": "oksigen-st",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "postcss-pxtorem": "^6.1.0",
-    "sass": "^1.97.1",
-    "vite": "npm:rolldown-vite@7.2.5"
-  },
-  "overrides": {
-    "vite": "npm:rolldown-vite@7.2.5"
-  },
-  "dependencies": {
-    "gh-pages": "^6.3.0"
-  }
+	"name": "oksigen-st",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"homepage": "https://distinkt-dd.github.io/oksigen/",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"deployGH": "gh-pages -d dist",
+		"deploy:ftp": "npm run build && node deploy-ftp.cjs"
+	},
+	"devDependencies": {
+		"postcss-pxtorem": "^6.1.0",
+		"sass": "^1.97.1",
+		"vite": "npm:rolldown-vite@7.2.5"
+	},
+	"overrides": {
+		"vite": "npm:rolldown-vite@7.2.5"
+	},
+	"dependencies": {
+		"basic-ftp": "^5.1.0",
+		"gh-pages": "^6.3.0"
+	}
 }

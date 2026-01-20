@@ -8,12 +8,13 @@ export default defineConfig({
 			'@': fileURLToPath(new URL('./src', import.meta.url)),
 			'@styles': fileURLToPath(new URL('./src/styles', import.meta.url)),
 			'@components': fileURLToPath(
-				new URL('./src/components', import.meta.url)
+				new URL('./src/components', import.meta.url),
 			),
 			'@shared': fileURLToPath(new URL('./src/shared', import.meta.url)),
 			'@scripts': fileURLToPath(new URL('./src/scripts', import.meta.url)),
 		},
 	},
+	base: '/',
 	css: {
 		preprocessorOptions: {
 			scss: {
