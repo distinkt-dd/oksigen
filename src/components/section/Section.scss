@@ -8,6 +8,9 @@
 	}
 
 	&__titlebox {
+		display: flex;
+		flex-direction: column;
+		row-gap: fluid(20, 15);
 		max-width: max-content;
 	}
 

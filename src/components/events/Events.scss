@@ -1,0 +1,21 @@
+.events {
+	&__list {
+		gap: fluid(65, 20);
+		flex-wrap: wrap;
+		@include mobile {
+			justify-content: center;
+		}
+		&-item {
+			max-width: fluid(303, 255);
+			padding: 10px 30px 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			gap: fluid(30, 15);
+		}
+	}
+
+	&__button {
+		max-width: 100%;
+	}
+}

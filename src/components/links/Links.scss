@@ -2,7 +2,7 @@
 	position: relative;
 	overflow: hidden;
 	&__btn {
-		width: fluid(240, 218);
+		max-width: 100%;
 	}
 
 	&__list {
