@@ -15,5 +15,8 @@
   },
   "overrides": {
     "vite": "npm:rolldown-vite@7.2.5"
+  },
+  "dependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
